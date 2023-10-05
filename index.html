@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura e organizaçao de computadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/arquitetura-computadores-funcionamento-programa.webp" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="voltarInicio">
+            <button><a href="#inicio">Voltar ao inicio</a></button>
+        </div>
+        
+        <div class="geral">
+            <div class="titulo_geral" id="inicio">
+                <h1>Arquitetura e organizaçao de computadores</h1>
+            </div>
+
+            <div class="texto_geral">
+
+                <div class="titulo">
+                    <h2>Apresentação</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Na era atual, marcada por avanços tecnológicos sem precedentes, os computadores desempenham um papel vital em todos os aspectos de nossas vidas. Eles são as engrenagens invisíveis que impulsionam nossa sociedade moderna, desde a comunicação instantânea até a resolução de problemas complexos em ciência e indústria. Por trás da magia da tela e da interface amigável, reside um mundo fascinante e intrincado de Arquitetura e Organização de Computadores, que é o alicerce de nossa era digital.</p>
+                    <p>&emsp;Este documento é uma jornada profunda e emocionante para desvendar os segredos dessas máquinas brilhantes que habitam nossas casas, escritórios e bolsos. Ele mergulha nas complexidades da arquitetura de hardware, explorando os componentes fundamentais que compõem cada computador, desde os antigos mainframes até os dispositivos ultramodernos de hoje.</p>
+                    <p>&emsp;À medida que mergulhamos nesse mundo intrigante, descobrimos como a Arquitetura de Computadores evoluiu ao longo do tempo, desde as máquinas analógicas primitivas até os supercomputadores quânticos que desafiam a compreensão humana. A narrativa nos leva a uma viagem através das gerações de computadores, revelando como as inovações moldaram nosso mundo e abriram caminho para o futuro.</p>
+                    <p>&emsp;A Organização de Computadores, por sua vez, é explorada minuciosamente à medida que examinamos como os dados são processados, armazenados e transmitidos. Os princípios de funcionamento da Unidade Central de Processamento (UCP), memória e dispositivos de entrada e saída são revelados de forma clara e acessível. Compreender esses conceitos é essencial para todos que desejam navegar no cenário digital em constante mudança.</p>
+                    <p>&emsp;No entanto, nossa exploração não se limita ao passado e ao presente. Este livro também lança um olhar visionário sobre o futuro da Arquitetura e Organização de Computadores. A inteligência artificial, a computação quântica e outras tecnologias de ponta estão moldando um amanhã que antes parecia ficção científica. À medida que a IA se torna mais autônoma e a computação se torna mais poderosa, nossas vidas e nossa sociedade serão transformadas de maneiras inimagináveis.</p>
+                    <p>&emsp;Esta é uma jornada emocionante que convida a todos, desde estudantes curiosos até profissionais experientes, a explorar o coração pulsante da revolução tecnológica que está moldando nosso mundo. Prepare-se para uma viagem que irá enriquecer sua compreensão do mundo digital e despertar sua paixão pela tecnologia.</p>
+                    <p>&emsp;Bem-vindo a uma jornada de descoberta e inovação. Bem-vindo ao mundo de Arquitetura e Organização de Computadores.</p>
+                </div>
+
+                <div class="sumario">
+                    <details>
+                        <summary>Sumário</summary>
+                        <h3><a href="#Introducao">Introdução</a></h3>
+                        <h3><a href="#1">1 - Evolução da arquitetura de computadores</a></h3>
+                        <h3><a href="#1.1">&emsp;1.1 – Elementos do sistema computacional</a></h3>
+                        <h3><a href="#1.2">&emsp;1.2 – Computadores analógicos x digitais</a></h3>
+                        <h3><a href="#1.3">&emsp;1.3 – Evolução tecnológica</a></h3>
+                        <h3><a href="#1.3.1">&emsp;&emsp;1.3.1 – Geração zero: computadores mecânicos (1642-1945)</a></h3>
+                        <h3><a href="#1.3.2">&emsp;&emsp;1.3.2 – Primeira geração: válvulas (1945-1955)</a></h3>
+                        <h3><a href="#1.3.3">&emsp;&emsp;1.3.3 – Segunda geração: transistores (1955-1965)</a></h3>
+                        <h3><a href="#1.3.4">&emsp;&emsp;1.3.4 – Terceira geração: circuitos integrados (1965-1980)</a></h3>
+                        <h3><a href="#1.3.5">&emsp;&emsp;1.3.5 – Quarta geração: microprocessadores (1970 - atual)</a></h3>
+                        <h3><a href="#1.4">&emsp;1.4 – Componentes básicos de um sistema computacional</a></h3>
+                        <h3><a href="#2">2 – Aprofundando na Arquitetura de John Von Neumann</a></h3>
+                        <h3><a href="#3">3 – Computadores Atuais ou 5ª Geração</a></h3>
+                        <h3><a href="#3.1">&emsp;3.1 – O Futuro da Arquitetura e Organização</a></h3>
+                        <h3><a href="#3.2">&emsp;3.2 – O Futuro da Computação</a></h3>
+                        <h3><a href="#4">4 – Conclusão sobre a Arquitetura e Organização</a></h3>
+                        <h3><a href="#5">5 – Referências bibliográficas</a></h3>
+                    </details>
+                </div>
+
+                <div class="titulo" id="Introducao">
+                    <h2>Introdução</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;No final da década de 1970, ocorreu uma revolução na computação com a introdução dos computadores pessoais no mercado. Essas máquinas, que anteriormente eram exclusivas de grandes empresas e ocupavam salas inteiras, agora estavam disponíveis nas mesas dos escritórios e nas casas das pessoas. Esse avanço por si só teve um impacto profundo em nossa sociedade, democratizando o acesso à tecnologia. No entanto, esse não foi o fim da história.</p>
+                    <p>&emsp;A conexão desses computadores e servidores à internet trouxe uma transformação ainda maior na forma como as pessoas se comunicam, compram, se divertem e criam. Os computadores pessoais deixaram de ser o centro desse mundo tecnológico, à medida que surgiram smartphones, tablets e outros dispositivos inovadores.</p>
+                    <p>&emsp;A história da computação tem sido marcada por contínuas inovações e criatividade, uma narrativa que está em constante evolução e na qual todos nós podemos influenciar. Para isso, é essencial entender como os computadores funcionam e como são organizados. Esse conhecimento é fundamental para o desenvolvimento de hardware, software e para aproveitar plenamente a tecnologia.</p>
+                    <p>&emsp;Os computadores não se limitam a laptops e desktops em escritórios; eles estão presentes em equipamentos médicos, carros, aparelhos de TV, celulares e até mesmo em brinquedos simples. A computação se tornou inseparável de nosso estilo de vida, mas poucas pessoas realmente compreendem como um computador funciona e como os dados são processados. Esse entendimento é crucial para garantir que a tecnologia continue a evoluir de maneira significativa.</p>
+                    <p>&emsp;Neste texto, vamos explorar os conceitos básicos da computação e sua evolução ao longo da história, estabelecendo uma base sólida para os tópicos subsequentes. Vamos abordar o significado dos dados e seu processamento, além de traçar uma breve linha do tempo na história dos computadores. Em seguida, discutiremos a arquitetura de Von Neumann, que é fundamental para compreender o funcionamento dos computadores.</p>
+                    <p>&emsp;Portanto, ao adquirir esse conhecimento, estaremos preparados para explorar de forma mais aprofundada o mundo da computação e suas aplicações.</p>
+                </div>
+
+                <div class="titulo" id="1">
+                    <h2>1 - Evolução da arquitetura de computadores</h2>
+                </div>
+                <div class="subtitulo" id="1.1">
+                    <h2>1.1 – Elementos do sistema computacional</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;No mundo da tecnologia, o computador desempenha um papel crucial. Ele é uma máquina capaz de seguir instruções humanas para realizar tarefas específicas, como cálculos e geração de relatórios. Essas instruções, chamadas de algoritmos, são um conjunto de regras organizadas de maneira lógica que, quando executadas pelo computador, resolvem problemas. Os algoritmos formam a base dos programas de computador, conhecidos profissionalmente como software.</p>
+                    <p>&emsp;O computador não se limita apenas à parte lógica; ele também possui uma parte física, que inclui dispositivos de entrada e saída (como monitor, teclado, impressora e webcam), dispositivos de armazenamento (como memória volátil e permanente) e o processador. Esses componentes físicos são coletivamente chamados de hardware.</p>
+                    <p>&emsp;Além disso, é relevante destacar que a arquitetura e organização de computadores, baseada no modelo de Von Neumann, desempenha um papel fundamental no funcionamento dos computadores modernos. Esse modelo descreve como o computador processa informações, incluindo a interação entre a unidade central de processamento (CPU) e a memória. A figura abaixo, apresente os elementos que compõem o hardware.</p>
+                    <div class="image">
+                        <img src="images/Imagem1.png" alt="">
+                    </div>
+                    <p>&emsp;Dessa forma, pode-se dizer que a combinação do hardware e do software for-ma o sistema computacional.</p>
+                </div>
+
+                <div class="subtitulo" id="1.2">
+                    <h2>1.2 – Computadores analógicos x digitais</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Os computadores podem ser divididos em dois tipos principais: analógicos e digitais. Computadores analógicos não operam diretamente com números, em vez disso, utilizam grandezas físicas, como tensão elétrica ou pressão hidráulica, para resolver problemas. Como exemplo incluem o Ábaco ou a régua de cálculo. Eles representam o comportamento de sistemas reais usando grandezas físicas e são geralmente projetados para finalidades específicas, como sistemas de controle.</p>
+                    <p>&emsp;Por outro lado, os computadores digitais resolvem problemas diretamente com números, manipulando algarismos que representam apenas os valores 0 e 1. Eles executam tarefas por meio de uma sequência programada de instruções com pouca intervenção humana. Os computadores digitais automatizaram cálculos complexos e desempenharam um papel fundamental no avanço da computação, especialmente nas áreas de engenharia e aplicações teóricas.</p>
+                    <p>&emsp;Essa transição da computação analógica para a digital representou um passo determinante para o progresso na computação, permitindo a automação de tarefas anteriormente inviáveis. Os computadores digitais facilitaram significativamente a vida pessoal e profissional das pessoas, tornando possível automatizar uma ampla gama de tarefas, desde cálculos complexos até demonstrações teóricas.</p>
+                </div>
+
+                <div class="subtitulo" id="1.3">
+                    <h2>1.3 – Evolução tecnológica</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Desde o surgimento dos computadores analógicos até o desenvolvimento dos computadores digitais, a evolução foi impulsionada pelas tecnologias utilizadas na construção desses computadores, à medida que novos conhecimentos, materiais e dispositivos foram descobertos ao longo do tempo, permitindo a substituição de tecnologias antigas por tecnologias mais eficientes em termos de computação.</p>
+                    <p>&emsp;Com o surgimento dos primeiros computadores, foi possível classificá-los em gerações, de acordo com as tecnologias utilizadas para sua fabricação. A seguir apresentamos as tecnologias utilizadas em cada geração.</p>
+                </div>
+                <div class="subsubtitulo" id="1.3.1">
+                    <h2>1.3.1 – Geração zero: computadores mecânicos (1642-1945)</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Esta geração de computadores foi caracterizada pela predominância de computadores essencialmente analógicos, construídos principalmente com engrenagens mecânicas e eletromecânicas. Esses computadores operavam em baixa velocidade e tinham como objetivo principal a resolução de problemas específicos. Exemplos notáveis dessa geração incluem o mecanismo de Antikythera, a máquina de Pascal e a máquina das diferenças de Babbage.</p>
+                </div>
+                <div class="subsubtitulo" id="1.3.2">
+                    <h2>1.3.2 – Primeira geração: válvulas (1945-1955)</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;A Segunda Guerra Mundial marcou o início da era da computação moderna. Nesse contexto, surgiram novas tecnologias mais avançadas, capazes de substituir os componentes mecânicos dos computadores analógicos, levando ao desenvolvimento dos computadores digitais. Isso resultou na denominação desses computadores como "primeira geração". Componentes como relés, capacitores e, principalmente, válvulas foram utilizados na fabricação desses computadores, com as válvulas permitindo cálculos significativamente mais rápidos do que os realizados com relés eletromecânicos utilizados anteriormente.</p>
+                    <div class="image">
+                        <img src="images/Imagem2.png" alt="">
+                    </div>
+                    <p>&emsp;Os computadores da época da primeira geração, baseados em válvulas, utilizavam cartões perfurados para entrada de dados e instruções, juntamente com uma memória temporária. No entanto, devido à natureza das válvulas, que controlavam o fluxo da corrente elétrica e amplificavam a tensão de entrada, esses computadores frequentemente apresentavam problemas de confiabilidade, com válvulas queimando após algum tempo de uso contínuo. Além disso, esses computadores eram volumosos, operavam em velocidade limitada e tinham alto consumo de energia.</p>
+                    <p>&emsp;Dentre as primeiras calculadoras e os primeiros computadores (eletrônicos) a utilizarem válvulas, destacamos:</p>
+                    <div class="lista_ord">
+                        <ol>
+                            <li><p>ENIAC, na Universidade da Pennsylvania;</p></li>
+                            <li><p>IBM 603, 604, 701 e SSEC;</p></li>
+                            <li><p>EDSAC, na Universidade de Cambridge;</p></li>
+                            <li><p>UNIVAC I, de Eckert e Mauchly.</p></li>
+                        </ol>
+                    </div>
+                    <p>&emsp;Abaixo consta algumas características do Eletronic Numerical Integrator and Com-puter (ENIAC), destacando o efeito do uso de válvulas na construção de computadores</p>
+                    <div class="lista_Nord">
+                        <ul>
+                            <li><p>Levou três anos para ser construído;</p></li>
+                            <li><p>Funcionava com aproximadamente 19.000 válvulas;</p></li>
+                            <li><p>Consumia 200 quilowatts;</p></li>
+                            <li><p>Pesava 30 toneladas;</p></li>
+                            <li><p>Tinha altura de 5,5m;</p></li>
+                            <li><p>Seu comprimento era de 25 m;</p></li>
+                            <li><p>Tinha o tamanho de 150 m².</p></li>
+                        </ul>
+                    </div>
+                    <p>&emsp;É possível imaginar a quantidade de energia consumida e o calor produzido por quase 19.000 válvulas? A finalidade do ENIAC era o cálculo de tabelas de balística para o exército americano. Tratava-se de uma máquina decimal, ou seja, não binária (baseada em 0’s e 1’s) e sua programação envolvia a configuração de diversos cabos e chaves, podendo levar vários dias.</p>
+                    <div class="image">
+                        <img src="images/Imagem3.png" alt="">
+                    </div>
+                </div>
+                <div class="subsubtitulo" id="1.3.3">
+                    <h2>1.3.3 – Segunda geração: transistores (1955-1965)</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Na segunda geração de computadores, a válvula foi substituída pelo transistor, um componente fundamental no desenvolvimento dessas máquinas. O transistor, criado pelo Bell Telephones Laboratories em 1948, trouxe avanços significativos para a computação. Ele reduziu drasticamente o tamanho dos computadores, aumentou a capacidade de armazenamento, produziu menos calor, consumiu menos energia e ofereceu maior confiabilidade em comparação às válvulas, que eram propensas a queimar com facilidade.</p>
+                    <p>&emsp;Os transistores desempenham a função fundamental de interruptores eletrônicos em circuitos de computadores, executando operações lógicas. Existem diversos modelos de transistores, cada um com características específicas para diferentes aplicações.</p>
+                    <div class="image">
+                        <img src="images/Imagem4.png" alt="">
+                    </div>
+                    <p>&emsp;Os materiais utilizados na fabricação do transistor são principalmente: o silício (Si), o germânio (Ge), o gálio (Ga) e alguns óxidos.</p>
+                </div>
+                <div class="subsubtitulo" id="1.3.4">
+                    <h2>1.3.4 – Terceira geração: circuitos integrados (1965-1980)</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Na terceira geração de computadores, surgiram os primeiros circuitos integrados (CI), que incorporavam inúmeros transistores e outros componentes eletrônicos em miniatura em um único encapsulamento. Cada chip equivalia a múltiplos transistores, oferecendo vantagens como maior confiabilidade (sem partes móveis), tamanho reduzido (equipamentos mais compactos e rápidos), baixo consumo de energia devido à miniaturização dos componentes e menor custo de fabricação. Isso tornou os computadores mais acessíveis.</p>
+                    <div class="image">
+                        <img src="images/Imagem5.png" alt="">
+                    </div>
+                    <p>&emsp;Ao contrário das gerações anteriores, os dispositivos de entrada e saída, como teclados e monitores, passaram a ser usados para entrada de dados e instruções. Os computadores dessa geração operavam em microssegundos e apresentaram um grande avanço em termos de desempenho. Um exemplo notável foi o IBM 360, que realizava 2 milhões de adições por segundo e cerca de 500 mil multiplicações, tornando seus predecessores obsoletos.</p>
+                </div>
+                <div class="subsubtitulo" id="1.3.5">
+                    <h2>1.3.5 – Quarta geração: microprocessadores (1970 - atual)</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Na quarta geração de computadores, os circuitos integrados assumiram diferentes tamanhos, tipos e funções, variando de algumas dezenas de milhares de transistores a circuitos muito mais complexos e "inteligentes" capazes de executar várias funções com base em comandos ou instruções fornecidos a eles.</p>
+                    <p>&emsp;A partir de 1970, o progresso tecnológico se concentrou principalmente na miniaturização dos componentes internos dos computadores, com foco na escala de integração dos circuitos integrados, ou seja, na quantidade de dispositivos que poderiam ser incorporados em um único chip.</p>
+                    <p>&emsp;Nessa geração, houve um grande avanço na escala de integração, conhecida como Large Scale Integration (LSI), graças ao desenvolvimento de várias técnicas que permitiram aumentar significativamente o número de componentes em um único chip.</p>
+                    <div class="image">
+                        <img src="images/Imagem6.png" alt="">
+                    </div>
+                    <p>&emsp;Em 1970, a INTEL Corporation introduziu no mercado um novo tipo de circuito integrado: o microprocessador. Os microprocessadores reuniram todos os principais componentes de um computador, incluindo a Unidade Central de Processamento (CPU) e controladores de memória e entrada/saída. Isso levou à designação dos primeiros computadores que utilizavam microprocessadores como "computadores de quarta geração".</p>
+                </div>
+
+                <div class="subtitulo" id="1.4">
+                    <h2>1.4 – Componentes básicos de um sistema computacional</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;A arquitetura de Von Neumann descreve os computadores em termos de quatro componentes principais: a Unidade Central de Processamento (UCP), que inclui a Unidade Lógica e Aritmética (ULA) e a Unidade de Controle (UC), a memória e os dispositivos de entrada e saída. Esses componentes são conectados por barramentos e constituem o hardware de um computador, agrupados em módulos específicos que formam a estrutura básica de um computador.</p>
+                    <p>&emsp;É importante esclarecer que, quando se menciona "processador", refere-se geralmente à UCP, e não ao gabinete do computador, como muitas pessoas erroneamente pensam.</p>
+                    <div class="image">
+                        <img src="images/Imagem7.png" alt="">
+                    </div>
+                    <p>&emsp;A seguir serão descritos cada um dos principais componentes de um computador:</p>
+                    <div class="lista_Nord">
+                        <ul>
+                            <li><p><b> UCP:</b> sigla representativa de Unidade Central de Processamento. Podemos dizer que se trata do componente principal do computador. Algumas pessoas chamam de processador ou microprocessador. É responsável pela execução de dados e instruções armazenadas em memória (código de programas e dados);</p></li>
+                            <li><p><b>Memória:</b> existem diversos tipos de memória em um computador (ex.: RAM (principal), ROM, cache, registradores), mas existe uma delas denominada memória principal, a qual é indispensável. A memória principal é tão importante quanto a UCP, pois sem ela não seria possível disponibilizar os programas e seus dados para o processamento pela CPU. Portanto, a memória é responsável por armazenar todos os programas que executam no computador e os dados que utilizam;</p></li>
+                            <li><p><b>Dispositivos de Entrada e Saída (E/S):</b> são dispositivos responsáveis pelas entradas e saídas de dados, ou seja, pelas interações entre o computador e o mundo externo (usuários). São exemplos de dispositivos de E/S: monitor de vídeo, teclado, mouse, webcam, impressora, entre outros;</p></li>
+                            <li><p><b>Barramento:</b> é responsável por interligar todos os componentes listados acima. Trata-se de uma via de comunicação composta por diversos fios ou condutores elétricos por onde circulam os dados manipulados pelo computador.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="titulo" id="2">
+                    <h2>2 – Aprofundando na Arquitetura de John Von Neumann</h2>
+                </div>
+                <div class="texto">
+                    <p>&emsp;Com a evolução da programação de computadores e a introdução do conceito de programa armazenado, antes desse avanço, a programação era uma tarefa extremamente tediosa e complicada. A única maneira de instruir um computador era configurá-lo manualmente com fios e interruptores para cada cálculo específico. Isso tornava o processo demorado e propenso a erros.</p>
+                    <p>&emsp;No entanto, essa abordagem começou a mudar graças a visionários como John von Neumann e Alan Turing. A ideia de representar programas na memória junto com os dados foi uma virada de jogo. Ela permitiu que os computadores lessem instruções diretamente da memória, tornando a programação muito mais flexível e acessível.</p>
+                    <p>&emsp;Essa inovação é frequentemente associada ao projeto ENIAC e ao matemático John von Neumann, que desempenhou um papel fundamental como consultor. Alan Turing também estava desenvolvendo ideias semelhantes na mesma época. A primeira publicação sobre o conceito de programa armazenado ocorreu em 1945, quando von Neumann propôs o <b>EDVAC</b> (Electronic Discrete Variable Computer), um novo computador que revolucionaria a forma como as máquinas eram programadas.</p>
+                    <p>&emsp;Assim, o conceito de programa armazenado marcou uma mudança fundamental na história da computação, tornando-a mais eficiente e abrindo caminho para a era dos computadores modernos que conhecemos hoje. Essa inovação foi um marco na evolução da arquitetura de computadores e na simplificação do processo de programação.</p>
+                    <p>&emsp;<b>John Von Neumann</b> foi um matemático natural da Hungria que viveu a maior parte de sua vida nos Estados Unidos. Contribuiu de forma significativa para a evolução dos computadores. Suas contribuições perduram até os dias atuais, sendo que a principal delas foi a construção de um computador sequencial binário de programa armazenado. Podemos dizer que ele propôs os elementos críticos de um sistema computacional, denominado de Modelo de Von Neumann. A figura apresenta os componentes da arquitetura de Von Neumann descritos acima:</p>
+                    <div class="image">
+                        <img src="images/Imagem8.png" alt="">
+                    </div>
+                    <p>&emsp;Destaca-se que a proposta inicial de Von Neumann ainda vem sendo utilizada, mas não em seu formato original, pois muitas melhorias foram realizadas visando obter uma máquina com desempenho cada vez mais elevado, como é o caso das arquiteturas paralelas, que replicam alguns elementos da arquitetura básica de Neumann. Atualmente, muitos pesquisadores têm desenvolvido estudos visando obter uma alternativa a esse padrão, mas ainda não obtiveram sucesso.</p>
+                    <p>&emsp;Em 1946, von Neumann e seus colegas começaram o projeto de um novo computador de programa armazenado, conhecido como computador IAS, no Princeton Institute for Advanced Studies. O computador IAS, embora não concluído antes de 1952, e o protótipo de todos os computadores de uso geral. Na figura abaixo, observa-se a estrutura geral de um computador IAS: </p>
+                    <div class="image">
+                        <img src="images/Imagem9.png" alt="">
+                    </div>
+                    <p>&emsp;A estrutura fundamental da arquitetura de computadores baseada no conceito proposto por Von Neumann inclui cinco componentes principais:</p>
+                    <div class="lista_ord">
+                        <ol>
+                            <li><p><b>Unidade Central de Processamento (CA):</b> Responsável pelas operações aritméticas essenciais, como adição, subtração, multiplicação e divisão.</p></li>
+                            <li><p><b>Unidade de Controle (CC):</b> Encarregada da sequenciação das operações e da execução das instruções, desempenhando um papel crucial na flexibilidade do dispositivo.</p></li>
+                            <li><p><b>Memória (M):</b> Necessária para armazenar dados e instruções. A memória é considerável, pois deve acomodar tanto as instruções para resolver problemas complexos quanto os dados envolvidos.</p></li>
+                            <li><p><b>Unidade de Entrada (I):</b> Responsável por transferir informações do meio de gravação exterior (R) para as partes específicas CA, CC e M. É equivalente aos neurônios sensoriais no sistema nervoso humano.</p></li>
+                            <li><p><b>Unidade de Saída (O):</b> Encarregada de transferir informações das partes específicas CA e M para o meio de gravação exterior (R). É análoga aos neurônios motores no sistema nervoso humano.</p></li>
+                        </ol>
+                    </div>
+                    <p>&emsp;Essa estrutura, proposta por Von Neumann, é semelhante à organização do sistema nervoso humano, com suas unidades de entrada e saída, unidades de processamento e memória. Ela forneceu as bases para o desenvolvimento dos computadores modernos e continua sendo um conceito central na arquitetura de computadores.</p>
+                    <p>&emsp;Os computadores modernos, em sua maioria, seguem a estrutura proposta por von Neumann, conhecida como "máquinas de von Neumann". Essa estrutura envolve a operação de um computador modelo IAS (Institute for Advanced Study) e é descrita da seguinte forma:</p>
+                    <p>&emsp;A memória do IAS consiste em 1.000 locais de armazenamento chamados palavras, cada uma com 40 dígitos binários (bits). Essas palavras armazenam tanto dados quanto instruções.</p>
+                    <p>&emsp;Os Números são representados em formato binário, e cada instrução é codificada em binário. Uma palavra pode conter dois códigos de instrução de 20 bits, com um código de operação de 8 bits (opcode) especificando a operação e um endereço de 12 bits indicando a localização na memória.</p>
+                    <div class="image">
+                        <img src="images/Imagem10.png" alt="">
+                    </div>
+                    <p>&emsp;A unidade de controle do IAS busca e executa instruções da memória sequencialmente. Ela interage com registradores importantes, incluindo: </p>
+                    <div class="lista_Nord">
+                        <ul>
+                            <li><p>Registrador de Buffer de Memória (mBR);</p></li>
+                            <li><p>Registrador de Endereço de Memória (mAR);</p></li>
+                            <li><p>Registrador de Instrução (IR);</li>
+                            <li><p>Registrador de Buffer de Instrução (IBR);</p></li>
+                            <li><p>Contador de Programa (pc).</p></li>
+                        </ul>
+                    </div>
+                    <p>&emsp;Além desses, há o Acumulador (Ac) e o Quociente Multiplicador (mq), usados temporariamente para armazenar operandos e resultados de operações da ALU (Unidade Lógica e Aritmética).</p>
+                    <div class="image">
+                        <img src="images/Imagem11.png" alt="">
+                    </div>
+                    <p>&emsp;O funcionamento do IAS ocorre em ciclos de instrução, divididos em dois subciclos. Durante o ciclo de busca (fetch cycle), o opcode da próxima instrução é carregado no IR, e a parte do endereço é carregada no MAR. A instrução pode ser retirada do IBR ou obtida diretamente da memória, passando pelo MBR, IBR, IR e MAR.</p>
+                    <p>&emsp;Essa estrutura de máquina de von Neumann serve como base para a operação dos computadores modernos e permite a execução de uma ampla variedade de operações, desde cálculos complexos até manipulação de dados e controle de dispositivos de entrada e saída.</p>
+                    <p>&emsp;Abaixo, o fluxograma parcial da operação do IAS:</p>
+                    <div class="image">
+                        <img src="images/Imagem12.png" alt="">
+                    </div>
+                    <p>&emsp;O computador IAS tinha um total de 21 instruções. Estas podem ser agrupadas da seguinte forma:</p>
+                    <div class="lista_Nord">
+                        <ul>
+                            <li><p><b>Transferência de dados:</b> movem dados entre memória e registradores da ALU ou entre dois registradores da ALU.</p></li>
+                            <li><p><b>Desvio incondicional:</b> normalmente, a unidade de controle executa instruções em sequência a partir da memória. Essa sequência pode ser alterada por uma instrução de desvio, que facilita operações repetitivas.</p></li>
+                            <li><p><b>Desvio condicional:</b> o desvio pode se tornar dependente de uma condição, permitindo assim pontos de decisão.</li>
+                            <li><p><b>Aritméticas:</b> operações realizadas pela ALU.</p></li>
+                            <li><p><b>Modificação de endereço:</b> permite que os endereços sejam calculados na ALU e depois inseridos em instruções armazenadas na memória. Isso permite a um programa uma flexibilidade de endereçamento considerável.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="titulo" id="3">
+                        <h2>3 – Computadores Atuais ou 5ª Geração</h2>
+                    </div>
+                    <div class="texto">
+                        <p>&emsp;Os computadores atuais são o resultado de uma longa evolução na área de Arquitetura e Organização de Computadores. Ao longo de décadas, essas máquinas passaram por várias gerações, cada uma marcada por avanços tecnológicos significativos.</p>
+                        <p>&emsp;A quinta geração de computadores é caracterizada pelo uso de processadores com milhões de transistores, arquiteturas de 64 bits, tecnologias RISC e CISC, discos rígidos com capacidade superior a 600GB, pen-drives com mais de 1GB de memória e discos óticos com mais de 50GB de armazenamento. </p>
+                        <p>&emsp;Esta geração é marcada pela ênfase na inteligência artificial e na conectividade, com a capacidade de desafiar a inteligência humana em jogos e robôs e uma crescente integração com dispositivos como smartphones, televisões, geladeiras e câmeras de segurança. A conectividade é uma característica importante, com dispositivos interconectados, formando a chamada "Internet das Coisas" (IoT).</p>
+                        <p><b>Características da 5ª Geração: </b></p>
+                        <div class="lista_Nord">
+                            <ul>
+                                <li><p>O nascimento da Inteligência Artificial; </p></li>
+                                <li><p>Reconhecimento de voz; </p></li>
+                                <li><p>Sistemas inteligentes; </p></li>
+                                <li><p>Computação Distribuída; </p></li>
+                                <li><p>Computação nas Nuvens (Cloud Computing); </p></li>
+                                <li><p>Computação Móvel;  </p></li>
+                                <li><p>Computação Ubíqua (presença direta das tecnologias na vida das pessoas, em casa ou em convívio social);  </p></li>
+                                <li><p>Realidade Aumentada.  </p></li>
+                            </ul>
+                        </div>
+                        <p>&emsp;Uma das tendências mais notáveis na evolução dos computadores é a crescente importância da inteligência artificial (IA). A IA capacitou os computadores a realizar tarefas que antes eram exclusivamente humanas, como reconhecimento de fala, visão computacional, tradução de idiomas e até mesmo jogar xadrez ou Go em níveis super-humanos.</p>
+                        <p>&emsp;A conectividade também desempenha um papel crucial nos computadores modernos. A capacidade de interconectar dispositivos e sistemas através da internet permitiu a criação de uma rede global de informações e comunicação. Hoje em dia, os computadores não estão apenas em nossos desktops e laptops, mas também em nossos bolsos (smartphones), em nossos carros (veículos autônomos) e em nossas casas (casa inteligente).</p>
+                        <p>&emsp;A evolução dos sistemas de armazenamento também é notável. Desde os primeiros discos rígidos com capacidade limitada até os sistemas de armazenamento em nuvem que oferecem acesso a terabytes de dados de qualquer lugar do mundo, o armazenamento de informações tornou-se cada vez mais eficiente e acessível.</p>
+                        <p>&emsp;Além disso, a segurança cibernética tornou-se uma preocupação crítica à medida que os computadores e sistemas se tornaram mais integrados em nossas vidas. A proteção de dados pessoais e empresariais é uma prioridade, e a evolução dos computadores inclui o desenvolvimento de técnicas avançadas de segurança e criptografia.</p>
+                        <p>&emsp;Os computadores atuais são poderosos, conectados e habilitados para a IA. Eles moldam nossa sociedade, economia e estilo de vida de maneira profunda e contínua. À medida que a tecnologia continua a evoluir, é emocionante pensar nas possibilidades futuras e nas inovações que ainda estão por vir. A história da Arquitetura e Organização de Computadores é uma história de progresso constante, e a jornada está longe de terminar.</p>
+                    </div>
+                    <div class="subtitulo" id="3.1">
+                        <h2>3.1 – O Futuro da Arquitetura e Organização</h2>
+                    </div>
+                    <div class="texto">
+                        <p>&emsp;A evolução continua, com o desenvolvimento de tecnologias como a computação quântica, que prometem revolucionar a computação. Espera-se também melhorias na eficiência energética, segurança cibernética e integração com a IA em áreas como veículos autônomos, assistência médica e muito mais.</p>
+                        <p>&emsp;Uma das áreas mais empolgantes no futuro da Arquitetura de Computadores é a <b>Computação Quântica</b>. Essa tecnologia utiliza qubits em vez de bits tradicionais e tem o potencial de realizar cálculos complexos em uma fração do tempo que os computadores clássicos levariam. Isso pode revolucionar áreas como criptografia, simulação molecular e otimização.</p>
+                        <p>&emsp;Inspirada no funcionamento do cérebro humano, a Computação Neuromórfica visa criar computadores que imitam os neurônios e as sinapses do cérebro. Isso pode levar a avanços significativos em aprendizado de máquina e IA.</p>
+                        <p>&emsp;Veremos também uma maior Especialização em Processadores para tarefas específicas, como IA, aprendizado profundo e processamento de gráficos. Isso aumentará a eficiência e o desempenho em domínios específicos.</p>
+                        <p>&emsp;E em se tratando de Arquiteturas mais Eficientes em Energia, à medida que a preocupação com a eficiência energética aumenta, os futuros computadores serão projetados para serem mais eficientes em termos de energia, reduzindo o consumo e o impacto ambiental.</p>
+                        <div class="image">
+                            <img src="images/Imagem13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="subtitulo" id="3.2">
+                        <h2>3.2 – O Futuro da Computação</h2>
+                    </div>
+                    <div class="texto">
+                        <p>&emsp;A IA continuará a se aprimorar e a se tornar mais integrada em nossa vida cotidiana. Os sistemas de IA se tornarão mais autônomos e capazes de entender contextos complexos.</p>
+                        <p>&emsp;A computação estará em todos os lugares, integrada em nossa vida cotidiana e em objetos do dia a dia. A Internet das Coisas (IoT) desempenhará um papel central nesse cenário.</p>
+                        <p>&emsp;A Realidade Virtual (RV) e a Realidade Aumentada (RA) oferecerão experiências digitais imersivas em áreas como jogos, educação, medicina e treinamento.</p>
+                        <p>&emsp;A computação em nuvem continuará a crescer, permitindo armazenamento e processamento remotos acessíveis de qualquer lugar do mundo.</p>
+                        <p>&emsp;À medida que a tecnologia avança, questões éticas e de privacidade se tornarão mais importantes. A sociedade terá que lidar com questões como o uso responsável de dados pessoais e a regulamentação da IA.</p>
+                        <p>&emsp;A sustentabilidade ambiental será uma consideração central no desenvolvimento de tecnologias futuras. Espera-se que os avanços tecnológicos também contribuam para soluções mais ecológicas.</p>
+                        <p>&emsp;A colaboração entre humanos e máquinas será mais comum, com sistemas de IA auxiliando profissionais em tarefas complexas, desde diagnósticos médicos até tomadas de decisões empresariais.</p>
+                        <p>&emsp;A computação desempenhará um papel fundamental na pesquisa médica e científica, possibilitando simulações mais complexas e descobertas inovadoras.</p>
+                        <p>&emsp;Abaixo uma imagem esboçando como serão as salas de servidores do futuro utilizando a Computação Quântica de alto nível, controlando, executando, guiando programas complexos para o bem estar da sociedade. Esta imagem foi gerada pela Inteligência Artificial chamada Leonardo.ai que tem com função gerar imagens tão incríveis e detalhadas que a imaginação humana não poderia criar. </p>
+                        <div class="image">
+                            <img src="images/Imagem14.png" alt="">
+                        </div>
+                        <p>&emsp;O futuro da computação é emocionante e cheio de promessas. À medida que a tecnologia continua a avançar, é crucial manter um equilíbrio entre inovação e responsabilidade, garantindo que as novas tecnologias beneficiem a sociedade como um todo. A colaboração global e o diálogo ético desempenharão um papel fundamental na determinação de como a tecnologia moldará nosso futuro. </p>
+                        <p>&emsp;Nesta outra imagem, a criação de uma cidade autossustentável, tecnológica e futurista gerada pela Inteligência Artificial Leonardo.ai, esboçando o que se deseja de uma cidade tecnológica, funcional e sustentável para o futuro.  </p>
+                        <p>&emsp;Este é um futuro que parece inimaginável nos tempos atuais, porem pode estar tão perto quanto três ou quatro décadas ou menos. A evolução computacional vem aprimorando a cada dia e de forma escalável suas técnicas e aperfeiçoamento de hardware possibilitarão evoluções das cidades quiçá às viagens para outros planetas. Assim nos cabe aguardar esta evolução chegar e como profissionais da Computação, ajudar e acelerar tal desenvolvimento.  </p>
+                        <div class="image">
+                            <img src="images/Imagem15.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="titulo" id="4">
+                        <h2>4 – Conclusão sobre a Arquitetura e Organização</h2>
+                    </div>
+                    <div class="texto">
+                        <p>&emsp;A contribuição de John von Neumann para a arquitetura de computadores foi de extrema importância e moldou o desenvolvimento da computação moderna. Sua proposta de máquina de von Neumann, que incluía a ideia revolucionária de armazenar tanto dados quanto instruções em memória, permitiu que os computadores se tornassem programáveis e flexíveis, em vez de serem dedicados a tarefas específicas.</p>
+                        <p>&emsp;Essa abordagem deu origem ao conceito de "programa armazenado", que é a base de todos os computadores contemporâneos. A estrutura de von Neumann, com sua Unidade Central de Processamento (UCP), memória, registradores e unidades de entrada e saída, serviu como um modelo sólido para a construção de computadores gerais e versáteis.</p>
+                        <p>&emsp;Hoje, todos os computadores modernos, desde os supercomputadores até os dispositivos móveis, seguem em grande parte os princípios estabelecidos por von Neumann. Sua visão e trabalho pioneiro na criação dessa arquitetura influenciaram significativamente o campo da computação e continuam a ser uma parte fundamental do nosso mundo digital. John von Neumann deixou um legado duradouro que continua a impulsionar a inovação e o avanço da tecnologia da informação.</p>
+                        <p>&emsp;No horizonte da tecnologia, o futuro da Arquitetura e Organização de Computadores é extraordinariamente empolgante e promissor. À medida que a computação continua a evoluir, as mudanças e avanços na arquitetura dos computadores moldarão nossa sociedade de maneiras inimagináveis. A computação quântica, a computação neuromórfica, os processadores especializados e as arquiteturas eficientes em energia estão à frente, trazendo consigo a promessa de um desempenho incomparável e novas capacidades.</p>
+                        <p>&emsp;Essas inovações não apenas impulsionarão a capacidade de processamento, mas também transformarão a maneira como interagimos com a tecnologia em nossas vidas cotidianas. À medida que a inteligência artificial se torna mais autônoma e integrada, nossa relação com os computadores se tornará mais natural e intuitiva.</p>
+                        <p>&emsp;No entanto, com esses avanços emocionantes vêm desafios éticos e práticos. À medida que a computação se torna mais poderosa, questões de segurança, privacidade e ética assumem um papel crucial. É imperativo que avancemos com responsabilidade, considerando o impacto social, ambiental e humano de nossas criações tecnológicas.</p>
+                        <p>&emsp;O futuro da Arquitetura e Organização de Computadores é uma história em constante evolução, moldada por mentes brilhantes e pela incessante busca por inovação. À medida que exploramos o desconhecido, devemos permanecer vigilantes em nossos princípios éticos e orientados para o benefício da humanidade. Este é um momento emocionante para a computação, e a jornada à frente é cheia de possibilidades emocionantes e desafios instigantes. Juntos, podemos moldar um futuro de avanços tecnológicos que melhorem nossas vidas e o mundo que compartilhamos.</p>
+                    </div>
+                    <div class="titulo" id="5">
+                        <h2>5 – Referências bibliográficas</h2>
+                    </div>
+                    <div class="texto">
+                        <p>STALLINGS, William. Arquitetura e Organização de Computadores. Tradução da 8a edição. Editora Prentice Hall Brasil, 2002.</p>
+                        <p>TANENBAUM, Andrew S. Organização Estruturada de Computadores. Tradução da 5a edição. Editora Prentice Hall Brasil, 2007.</p>
+                        <p>PATTERSON, David A.; HENNESSY, John L. “Organização e projeto de computadores: a interface hardware/sofware.” 2. ed. Rio de Janeiro: LTC, 2000. 551p.</p>
+                        <p>MONTEIRO, Mário A. Introdução à Organização de Computadores, 5a edição. Editora LTC, 2007.</p>
+                        <p>Sites Consultados:</p>
+                        <p><a href="https://embarcados.com.br/arquitetura-de-john-von-neumann/">https://embarcados.com.br/arquitetura-de-john-von-neumann/</a></p>
+                        <p><a href="https://www.icloud.com.br/5406/o-que-e-arquitetura-e-organizacao-de-computadores">https://www.icloud.com.br/5406/o-que-e-arquitetura-e-organizacao-de-computadores</a></p>
+                        <p><a href="https://www.diegomacedo.com.br/fundamentos-de-arquitetura-e-organizacao-de-computadores/">https://www.diegomacedo.com.br/fundamentos-de-arquitetura-e-organizacao-de-computadores/</a></p>
+                        <p><a href="http://www.esalq.usp.br/lepse/imgs/conteudo_thumb/A-Arquitetura-de-computador-de-von-Neumann.pdf">http://www.esalq.usp.br/lepse/imgs/conteudo_thumb/A-Arquitetura-de-computador-de-von-Neumann.pdf</a></p>
+
+                    </div>
+
+
+            </div>
+        
+            <div class="button">
+                <button><a href="https://domhelder-my.sharepoint.com/:b:/g/personal/d22783_academico_domhelder_edu_br/Ebcus63IrYJAo7pQ8l9qM0QBybIJYiPNiPjSxa2M8uoHEg?e=9aH1uG" target="_blank">Baixe o arquivo aqui</a></button>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>
